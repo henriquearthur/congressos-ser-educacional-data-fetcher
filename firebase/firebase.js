@@ -3,7 +3,7 @@ var serviceAccount = require('./congressos-ser-educacional-firebase-adminsdk-h98
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    storageBucket: "https://congressos-ser-educacional.firebaseio.com"
+    storageBucket: "congressos-ser-educacional.appspot.com"
 });
 
 var db = admin.firestore();
