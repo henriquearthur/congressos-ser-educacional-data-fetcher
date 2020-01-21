@@ -1,0 +1,10 @@
+node_modules/
+event_images_tmp/*
+!event_images_tmp/.gitkeep
+backups/*
+!backups/.gitkeep
+firebase/congressos-*.json
+.env
+
+.history
+output.txt
