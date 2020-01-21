@@ -29,7 +29,7 @@ firestoreService
 
             var currentDate = moment().format('LLL');
 
-            var emailContent = 'Backup realizado em <b>' + currentDate + '</b>.<br>';
+            var emailContent = 'Backup realizado em <b>' + currentDate + ' UTC</b>.<br>';
             emailContent += 'Arquivo .json em anexo.';
 
             const config = {
@@ -45,7 +45,7 @@ firestoreService
                 mail: {
                     from: 'eu@henriquearthur.com.br',
                     to: ['eu@henriquearthur.com.br', 'hnrq.art@gmail.com'],
-                    subject: '[congressos-ser-educacional-data-fetcher] Backup realizado - ' + currentDate,
+                    subject: '[congressos-ser-educacional-data-fetcher] Backup realizado - ' + currentDate + ' UTC',
                     html: emailContent,
                     attachments: [
                         {
